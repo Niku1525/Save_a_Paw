@@ -6,17 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Login & Registration Form</title>
   <link rel="stylesheet" href="../css/main2.css">
+  <script src="../js/autentication.js"></script>
 </head>
 <body>
   <div class="container">
     <input type="checkbox" id="check">
     <div class="login form">
       <header>Iniciar sesión</header>
-      <form action="#">
-        <input type="text" placeholder="Ingresar correo electronico">
-        <input type="password" placeholder="Ingresa tu contraseña">
-        <a href="#">¿Olvidaste la contraseña?</a>
-        <input type="button" class="button" value="Iniciar sesión">
+      <form>
+        <input type="text" placeholder="Ingresar correo electronico" id="loginEmail" required>
+        <input type="password" placeholder="Ingresa tu contraseña" id="loginPassword" required>
+        <input type="submit" class="button" value="Iniciar sesión" onclick="loginUser()">
+        <input type="button" class="button" value="Volver" onclick="goToHomePage()">
       </form>
       <div class="signup">
         <span class="signup">¿No tienes una cuenta?
@@ -26,11 +27,12 @@
     </div>
     <div class="registration form">
       <header>Registrarse</header>
-      <form action="#">
-        <input type="text" placeholder="Ingresar correo electronico">
-        <input type="password" placeholder="Crear contraseña">
-        <input type="password" placeholder="Confirma tu contraseña">
-        <input type="button" class="button" value="Crear cuenta">
+      <form>
+        <input type="text" placeholder="Ingresar correo electronico" id="registerEmail" required>
+        <input type="password" placeholder="Crear contraseña" id="registerPassword" required>
+        <input type="password" placeholder="Confirma tu contraseña" id="confirmPassword" required>
+        <input type="submit" class="button" value="Crear cuenta" onclick="registerUser()">
+        <input type="button" class="button" value="Volver" onclick="goToHomePage()">
       </form>
       <div class="signup">
         <span class="signup">¿Ya tienes cuenta?
