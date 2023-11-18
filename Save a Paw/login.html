@@ -13,12 +13,12 @@
     <input type="checkbox" id="check">
     <div class="login form">
       <header>Iniciar sesión</header>
-      <form>
-        <input type="text" placeholder="Ingresar correo electronico" id="loginEmail" required>
-        <input type="password" placeholder="Ingresa tu contraseña" id="loginPassword" required>
-        <input type="submit" class="button" value="Iniciar sesión" onclick="loginUser()">
-        <input type="button" class="button" value="Volver" onclick="goToHomePage()">
-      </form>
+        <form onsubmit="loginUser(); return false;">
+    <input type="text" placeholder="Ingresar correo electrónico" id="loginEmail" required>
+    <input type="password" placeholder="Ingresa tu contraseña" id="loginPassword" required>
+    <input type="submit" class="button" value="Iniciar sesión">
+    <input type="button" class="button" value="Volver" onclick="goToHomePage()">
+        </form>
       <div class="signup">
         <span class="signup">¿No tienes una cuenta?
          <label for="check">Crear cuenta</label>
@@ -28,7 +28,14 @@
     <div class="registration form">
       <header>Registrarse</header>
       <form>
+        <input type="text" placeholder="Ingresar nombre" id="registerName" required>
+        <input type="text" placeholder="Ingresar apellido" id="registerLastname" required>
         <input type="text" placeholder="Ingresar correo electronico" id="registerEmail" required>
+        <select name="gender" id="registerGender" class="button">
+          <option value="" disabled selected hidden>Seleccionar género</option>
+          <option value="Masculino" class="button">Masculino</option>
+          <option value="Femenino" class="button">Femenino</option>
+        </select>
         <input type="password" placeholder="Crear contraseña" id="registerPassword" required>
         <input type="password" placeholder="Confirma tu contraseña" id="confirmPassword" required>
         <input type="submit" class="button" value="Crear cuenta" onclick="registerUser()">

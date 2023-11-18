@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Save a Paw</title>
     <link rel="stylesheet" href="../css/main.css">
-    <script src="../js/main.js" ></script>
+    <script src="../js/autentication.js" ></script>
+    <script>
+        window.onload = function () {
+            updateNavigation();
+        };
+    </script>
 </head>
 <body>
     <nav id="navbar">
@@ -16,7 +21,7 @@
                 <li><a href="#">Tienda</a></li>
                 <li><a href="#">Reseñas</a></li>
                 <li><a href="#">Contacto</a></li>
-                <button><a href="login.html">Login</a></button>
+                <li id="navigationMenu"></li>
             </ul>
         </div>
     </nav>
@@ -34,13 +39,27 @@
       <img src="">
   </section>
   <h2>Nuestros Servicios</h2>
-
   <div class="service">
-      <img src="" alt="">
-      <h3>Servicio de Adopción</h3>
-      <p>Encuentra a tu amigo peludo y dale un hogar lleno de amor</p>
-  </div>
+      <div class="container">
+            <h3>Servicio de Adopción</h3>
+            <p>Para aquellas personas que estén en busqueda <br> de un amigo peludo y puedan brindarle <br> un hogar lleno de amor</p>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+    
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+    
+        <label for="tipoMascota">Tipo de mascota:</label>
+        <select id="tipoMascota" name="tipoMascota">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+        </select>
 
+        <input type="submit" value="Enviar">
+    </form>
+  </div>
+</div>
   <section class="products">
     <h2>¡Nuestros productos!</h2>
     <div class="all__products">
