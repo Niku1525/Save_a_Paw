@@ -300,3 +300,153 @@ form {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+  width: 100%;
+  height: auto;
+  background: #282828;
+  padding-bottom: 20px;
+}
+
+.square{
+  width: 100%;
+  height: auto;
+  margin-top: 48px;
+  padding: 0px !important;
+  padding-bottom: 20px;
+}
+
+.brand{
+  margin-top: 20px;
+  font-size: 38px;
+  color: #00a991;
+  font-weight: bold;
+}
+
+.about{
+  width: 85%;
+  color: white;
+  margin-top: 5px;
+}
+
+.heading{
+  margin-top: 20px;
+  font-size: 38px;
+  color: #00a991;
+  font-weight: bold;
+  text-align: center;
+}
+
+.p-list{
+  padding: 0;
+}
+
+.p-list li{
+  display: block;
+  text-align: center;
+  margin: 5px 0px;
+  color: white;
+}
+
+.l-list{
+  padding: 0;
+}
+
+.l-list li{
+  display: block;
+  text-align: center;
+  margin: 5px 0px;
+  color: white;
+}
+
+.contact{
+  padding: 0;
+}
+
+.contact li{
+  display: block;
+  text-align: center;
+  margin: 5px 0px;
+  color: white;
+}
+
+.social-media{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media li{
+  display: inline-flex;
+  color: white;
+  margin: 5px;
+  font-size: 25px;
+}
+
+.copy{
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width:767px){
+  .heading{
+      text-align: left;
+  }
+  .square{
+      padding: 0px 30px !important;
+      margin-top: 10px!important;
+  }
+
+  .p-list li , .l-list li , .contact li{
+      text-align: left;
+  }
+  .social-media{
+      padding-left: 0!important;
+  }
+
+  .social-media li{
+      margin: 5px;
+  }
+}
+footer{
+  width: 100%;
+  background-color: #000;
+}
+.container3{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  width: 90%;
+  margin: 20px auto 60px;
+}
+.container3 div h2{
+  color: #fbf9fa;
+  font-family: sans-serif;
+  font-size: 24px;
+  padding: 20px 0;
+}
+.container3 div ul{
+  list-style-type: none;
+}
+.container3 div ul li{
+  margin: 16px 0;
+  cursor: pointer;
+}
+.container3 div ul li a{
+  font-size: 20px;
+  text-decoration: none;
+  font-family: sans-serif;
+  position: relative;
+  left: 0;
+  padding: 2px;
+  color: #00abb3;
+
+  transition: all 0.4s;
+}
+.container3 div ul li a:hover{
+  left: 8px;
+}
+
