@@ -67,9 +67,9 @@ function updateNavigation() {
 }
 
 function showLoginForm() {
-    window.location.href = 'login.html';
+    window.location.href = 'Save a Paw/login.html';
 }
 
 function goToHomePage() {
-    window.location.href = 'index.html';
+    window.location.href = '../index.html';
 }
