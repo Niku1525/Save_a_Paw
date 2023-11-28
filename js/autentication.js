@@ -36,7 +36,7 @@ function loginUser() {
     if (storedUser && storedUser.email === email && storedUser.password === password) {
         console.log('Inicio de sesión exitoso');
         sessionStorage.setItem('loggedInUser', JSON.stringify(storedUser));
-        window.location.href = 'index.html'; 
+        window.location.href = '../index.html'; 
     } else {
         console.error('Nombre de usuario o contraseña incorrectos');
         alert('Usuario no registrado. Por favor, regístrate antes de iniciar sesión.');
